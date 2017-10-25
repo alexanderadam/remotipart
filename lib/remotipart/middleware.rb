@@ -24,7 +24,7 @@ module Remotipart
           env['HTTP_X_REQUESTED_WITH'] = 'xmlhttprequest'
         end
 
-        # For iFrame transport, override the accepted format, because it isn't what we really want
+        # Override the accepted format, because it isn't what we really want
         if params['X-Http-Accept']
           env['HTTP_ACCEPT'] = params['X-Http-Accept']
         end
